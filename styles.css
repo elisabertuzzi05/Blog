@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'SansationLight';
+    src: url('SansationLight.woff') format('woff');
+  }
+  
+  body {
+    font-family: 'SansationLight', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+}
+
+/* Stile per l'intestazione */
+header {
+  background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover {
+    background-color: #b0b6b2;
+    
+  }
+
+
+  .image-container {
+    filter: brightness(70%);
+    position: relative;
+    display: none; /* Nasconde tutte le immagini per default */
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+  img {
+    max-width: 100%;
+    filter: brightness(70%);
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .overlay-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Aggiungi questa linea */
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0; /* Imposta l'opacità iniziale a 0 */
+    transition: opacity 1s;
+}
+
+#home:hover .overlay-text {
+    opacity: 1; 
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+  }
+  
+  .blog-post:hover {
+    transform: scale(1.05);
+  }
+  
+  .blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .blog-post h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #34495e;
+  }
+
+/* Stile per il piè di pagina */
+footer {
+ 
+    text-align: center;
+    padding: 10px;
+}

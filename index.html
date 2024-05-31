@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog del Gatto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header >
+        <h1>Cat's Life</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi siamo</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+          <h1></h1>
+            <section id="home">
+                <div class="image-container mySlides">
+                    <img src="cats.jpg" style="width:100%">
+                    <div class="overlay-text">
+                        <h3 >Cibi che i gatti non possono assolutamente mangiare</h3>
+                        <button onclick="">Vai a</button>
+                    </div>
+                </div>
+    
+                <div class="image-container mySlides">
+                    <img src="blog2.jpg" style="width:100%">
+                    <div class="overlay-text">
+                        <h2>Come prendersi cura di un gatto anziano</h2>
+                        <button onclick="">Vai a</button>
+                    </div>
+                </div>
+    
+                <div class="image-container mySlides">
+                    <img src="cats.jpg" style="width:100%">
+                    <div class="overlay-text">
+                        <h2>Perchè è importante il gioco per i gatti?</h2>
+                        <button onclick="">Vai a</button>
+                    </div>
+                </div>
+
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+  }
+  </script>
+  
+    
+                
+            
+        
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog del Gatto. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
