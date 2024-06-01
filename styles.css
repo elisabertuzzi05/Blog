@@ -41,6 +41,11 @@ li a:hover {
     
   }
 
+  .logo{
+    width: 80px;
+    height:80px;
+
+  }
 
   .image-container {
     filter: brightness(70%);
@@ -112,7 +117,8 @@ li a:hover {
 
 /* Stile per il piè di pagina */
 footer {
- 
+  background-color:#DCDCDC;
+  color:black;
     text-align: center;
     padding: 10px;
 }
